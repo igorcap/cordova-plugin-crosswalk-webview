@@ -25,7 +25,7 @@
         <preference name="XWALK_COMMANDLINE" default="--disable-pull-to-refresh-effect"/>
         <preference name="XWALK_MODE" default="embedded" />
         <preference name="XWALK_MULTIPLEAPK" default="true" />
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine"/>
             <preference name="webView" value="org.crosswalk.engine.XWalkBridgeEngine"/>
             <preference name="modernChromeEntry" value="$MODERN_CHROME_ENTRY"/>
