@@ -121,8 +121,8 @@ public class XWalkBridgeEngine implements CordovaWebViewEngine {
 
         XWalkBridgeEngine.checkedShouldMakeXwalkWebView = true;
         
-        // only for Nougat and newer versions
-        if (android.os.Build.VERSION.SDK_INT >= 24) {
+        // only for Lollipop and newer versions
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
             XWalkBridgeEngine.cachedShouldMakeXwalkWebView = false;
             return false;
         }
