@@ -67,13 +67,6 @@ if (cdvBuildMultipleApks == null) {
     ext.xwalkMultipleApk = cdvBuildMultipleApks.toBoolean();
 }
 
-def minSdk = getConfigPreference("android-minSdkVersion");
-if (compileSdkVersion == null) {
-    ext.compileSdkVersion = minSdk && Integer.parseInt(minSdk) > DEFAULT_MIN_SDK_VERSION ? minSdk : DEFAULT_MIN_SDK_VERSION;
-} else if (Integer.parseInt('' + compileSdkVersion) < Integer.parseInt(minSdk)) {
-    ext.compileSdkVersion = minSdk;
-}
-
 if (!project.hasProperty('xwalkMode')) {
     ext.xwalkMode = getConfigPreference("xwalkMode");
 }
